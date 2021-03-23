@@ -1,0 +1,21 @@
+set linenumbers
+set tabsize 4
+set titlecolor cyan
+set autoindent
+set backup
+set backupdir ~/.nano_backups
+set casesensitive
+set cutfromcursor
+set tabstospaces
+
+#set afterends
+#set allow_insecure_backup
+#set atblanks
+#set backwards
+#set boldtext
+#set brackets string
+#set errorcolor red,yellow
+#set fill 8
+#set functioncolor cyan,cyan
+#set historylog
+

@@ -2,8 +2,8 @@ set linenumbers
 set tabsize 4
 set titlecolor cyan
 set autoindent
-set backup
-set backupdir ~/.nano_backups
+#set backup
+#set backupdir ~/.nano_backups
 set casesensitive
 set cutfromcursor
 set tabstospaces

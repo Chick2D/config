@@ -18,7 +18,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegun/fzf'
 Plug 'dense-analysis/ale'
 Plug 'scrooloose/nerdtree'
-Plug 'jiangmiao/autopairs'
+Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

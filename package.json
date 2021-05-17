@@ -1,0 +1,24 @@
+{
+    "name": "config",
+    "version": "1.0.0",
+    "description": "Configuration files for my *nix systems",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "npx prettier --check .",
+        "format": "npx prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yonderbread/config.git"
+    },
+    "author": "yonderbread",
+    "license": "GPLv3",
+    "bugs": {
+        "url": "https://github.com/yonderbread/config/issues"
+    },
+    "homepage": "https://github.com/yonderbread/config#readme",
+    "devDependencies": {
+        "prettier": "2.3.0"
+    }
+}

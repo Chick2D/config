@@ -1,2 +1,3 @@
 # .configs
-Configuration files for my *nix systems
+
+Configuration files for my \*nix systems

@@ -1,3 +1,3 @@
 [submodule "dwm"]
-	path = src/dwm
+	path = dwm
 	url = https://github.com/yonderbread/dwm-yb

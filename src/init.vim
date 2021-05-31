@@ -20,7 +20,6 @@ endif
 syntax on
 filetype plugin indent on
 
-
 "        _______________
 "       { P~L~U~G~I~N~S }
 
@@ -28,9 +27,6 @@ filetype plugin indent on
 " https://github.com/nschurmann/configs/blob/master/.vim/plugins.vim
 
 call plug#begin(stdpath('config') . '/plugged')
-
-
-
 Plug 'junegunn/vim-easy-align'
 Plug 'junegun/fzf'
 Plug 'dense-analysis/ale'
@@ -51,7 +47,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
-
 call plug#end()
 
 "     _______________________

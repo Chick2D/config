@@ -1,4 +1,6 @@
-"
+"        _________________
+"       { S~E~T~T~I~N~G~S }
+
 set showmatch
 set hlsearch
 set expandtab

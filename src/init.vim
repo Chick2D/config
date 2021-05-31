@@ -14,25 +14,22 @@ if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lum]"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum]"
   set termguicolors
+endif
 " set cc=80
 
 syntax on
 filetype plugin indent on
-let g:airline_theme='onehalfdark'
 
-"     _______________________
-"    { C~O~L~O~R~S~C~H~E~M~E }
-
-
-colorscheme onehalflight
 
 "        _______________
 "       { P~L~U~G~I~N~S }
 
+" [ List of vim-plug plugins ]
+" https://github.com/nschurmann/configs/blob/master/.vim/plugins.vim
+
 call plug#begin(stdpath('config') . '/plugged')
 
-" [List of vim-plug plugins]
-" https://github.com/nschurmann/configs/blob/master/.vim/plugins.vim
+
 
 Plug 'junegunn/vim-easy-align'
 Plug 'junegun/fzf'
@@ -56,3 +53,9 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
+
+"     _______________________
+"    { C~O~L~O~R~S~C~H~E~M~E }
+
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'

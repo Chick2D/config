@@ -24,7 +24,7 @@ let g:airline_theme='onehalfdark'
 "    { C~O~L~O~R~S~C~H~E~M~E }
 
 
-colorscheme onehalfdark
+colorscheme onehalflight
 
 "        _______________
 "       { P~L~U~G~I~N~S }

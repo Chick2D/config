@@ -1,17 +1,27 @@
+"
 set showmatch
 set hlsearch
 set expandtab
 set shiftwidth=4
 set autoindent
 set number
-" set cc=80
-filetype plugin indent on
-syntax on
 set ruler
+" set cc=80
+syntax on
+filetype plugin indent on
 
-" Plugins
+"     _______________________
+"    { C~O~L~O~R~S~C~H~E~M~E }
+
+" colorscheme onehalflight
+colorscheme onehalfdark
+
+"        _______________
+"       { P~L~U~G~I~N~S }
+
 call plug#begin(stdpath('config') . '/plugged')
 
+" [List of vim-plug plugins]
 " https://github.com/nschurmann/configs/blob/master/.vim/plugins.vim
 
 Plug 'junegunn/vim-easy-align'
@@ -32,5 +42,6 @@ Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()

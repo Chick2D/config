@@ -8,14 +8,22 @@ set shiftwidth=4
 set autoindent
 set number
 set ruler
+set t_Co=256
+set cursorline
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lum]"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum]"
+  set termguicolors
 " set cc=80
+
 syntax on
 filetype plugin indent on
+let g:airline_theme='onehalfdark'
 
 "     _______________________
 "    { C~O~L~O~R~S~C~H~E~M~E }
 
-" colorscheme onehalflight
+
 colorscheme onehalfdark
 
 "        _______________

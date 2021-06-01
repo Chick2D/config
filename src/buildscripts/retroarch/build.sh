@@ -10,7 +10,6 @@ sudo apt-get update
 sudo apt-get build-dep
 
 # Update package lists, upgrade prexisting packages, install dependencies
-# Yes I'm aware that I've added the `retroarch` package to be installed, it's for it's dependencies that come with it
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y build-essential libxkbcommon-dev libx11-xcb-dev zlib1g-dev libfreetype6-dev libegl1-mesa-dev libgles2-mesa-dev libgbm-dev nvidia-cg-toolkit nvidia-cg-dev libavcodec-dev libsdl2-dev libsdl-image1.2-dev libxml2-dev yasm

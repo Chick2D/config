@@ -47,6 +47,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
+Plug 'linkinpark342/xonsh-vim'
 
 " Nerdtree and plugins for it
 Plug 'scrooloose/nerdtree' |

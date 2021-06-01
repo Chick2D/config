@@ -1,0 +1,30 @@
+# UNFINISHED!! DO NOT USE!!
+
+bash -c ! python -m pip install --upgrade colorama
+
+import colorama, os
+
+CONFIG_REPO_PATH = ${HOME} + "/dev/config"
+CONFIG_GITHUB_REPO = "git@github.com:yonderbread/config.git"
+HOME_CONFIG_PATH = $HOME + "/.config"
+
+CONFIG_SYMLINKS = {
+    "src/init.vim": HOME_CONFIG_PATH + "/nvim/init.vim",
+    "src/alacritty.yml": HOME_CONFIG_PATH + "/alacritty/alacritty.yml"
+}
+
+def update_config_repo():
+    if not os.path.exists(CONFIG_REPO_PATH):
+        git clone --recursive CONFIG_GITHUB_REPO CONFIG_REPO_PATH
+    elif os.path.exists(CONFIG_REPO_PATH):
+        cd CONFIG_REPO_PATH
+        git fetch && git pull
+    cd CONFIG_REPO_PATH
+    for k,v in CONFIG_SYMLINKS.items():
+        with open(k,"r") as f:
+            with open(v,"w") as fw:
+                fw.write(r.read())
+                fw.close()
+                print(k + "->" + v)
+        
+    

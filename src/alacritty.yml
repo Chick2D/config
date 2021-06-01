@@ -55,4 +55,4 @@ cursor:
 live_config_reload: true
 
 shell:
-    program: /usr/bin/xonsh
+    program: /bin/bash

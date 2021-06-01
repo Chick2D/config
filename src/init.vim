@@ -1,6 +1,7 @@
 "        _________________
 "       { S~E~T~T~I~N~G~S }
 
+set encoding=UTF-8
 set showmatch
 set hlsearch
 set expandtab
@@ -30,7 +31,6 @@ call plug#begin(stdpath('config') . '/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'junegun/fzf'
 Plug 'dense-analysis/ale'
-Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
@@ -47,10 +47,35 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'vim-airline/vim-airline'
+
+" Nerdtree and plugins for it
+Plug 'scrooloose/nerdtree' |
+  \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+  \ Plug 'ryanoasis/vim-devicons'
+  
 call plug#end()
 
 "     _______________________
 "    { C~O~L~O~R~S~C~H~E~M~E }
-
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
+
+"        _________________
+"       { N~E~R~D~T~R~E~E }
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+let g:NERDTreeGitStatusUseNerdFonts = 1
+
+"        _______________________
+"       { V~I~M~D~E~V~I~C~O~N~S }
+let g:airline_powerline_fonts = 1
